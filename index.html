@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Discovery App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="header">
+      <h1 class="logo">🎬 Movie Discovery</h1>
+      <button id="toggle-mode" aria-label="Toggle light/dark mode">
+        <span class="toggle-icon"></span>
+      </button>
+    </header>
+    <div class="main-layout">
+      <aside class="sidebar">
+        <div class="search-box">
+          <input type="text" id="search-input" placeholder="Tìm kiếm phim...">
+        </div>
+        <div class="genre-filter">
+          <h2>Thể loại</h2>
+          <form id="genre-form">
+            <!-- Checkbox thể loại sẽ được render tự động bằng JS -->
+          </form>
+        </div>
+      </aside>
+      <main class="main-content">
+        <div id="movies-list" class="movies-list">
+          <!-- Movie cards sẽ được render tự động bằng JS -->
+        </div>
+      </main>
+    </div>
+    <!-- Modal chi tiết phim -->
+    <div id="movie-modal" class="modal" style="display:none;">
+      <div class="modal-content">
+        <span class="close-modal" id="close-modal">&times;</span>
+        <div id="modal-details">
+          <!-- Nội dung chi tiết phim sẽ được render bằng JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
+</html>
